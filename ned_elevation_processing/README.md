@@ -1,0 +1,4 @@
+
+A simple python tool for an elevation raster workflow for QGIS to prepare data to meet a particular ASC grid file format. 
+
+The intended input raster is a NED elevation GeoTiff (already clipped to region) which is a processed and translated to .asc format that can be converted in to point cloud in Rhino and finally a 3D mesh. Since the ASC plugin for Rhino requires that the ASCII file have a NODATA value assigned and square cells with single dimension for x/y, this script delivers an output .asc file that meets those specifications. Reprojecting etc was for later integration with city vector datasets in State Plane ft. This was written for the Eastern MO / St Louis region (EPSG 102696) and still needs slight modification for general use (see comments). 
